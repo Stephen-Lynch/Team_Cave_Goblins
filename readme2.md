@@ -27,11 +27,11 @@ The Second algorithm is kinda funky. Funk SVD uses a system of rounds that start
 This is the user recemmondation list for user 472:
 |Mean of Means||ALS|
 |:---:|---|:---:|
-|Forrest Gump (1957)|l|An Affair to Remember (1957)|
-|Circle of Friends (1946)|l|The Best Years of Our Lives (1946)|
-|Meet Me in St. Louis (1926)|l|The General (1926)|
-|Fly Away Home (1994)|l|Shallow Grave (1994)|
-|House Party 3 (1976)|l|The Big Bus (1976)|
+|Forrest Gump (1994)|l|An Affair to Remember (1957)|
+|Circle of Friends (1995)|l|The Best Years of Our Lives (1946)|
+|Meet Me in St. Louis (1944)|l|The General (1926)|
+|Fly Away Home (1996)|l|Shallow Grave (1994)|
+|House Party 3 (1994) |l|The Big Bus (1976)|
 
 
 # Conclusion
