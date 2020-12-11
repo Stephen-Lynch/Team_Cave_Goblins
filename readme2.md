@@ -13,6 +13,8 @@ The head of the regional board of goblins (Jeny), expressed that in a national p
 <img src="images/movies_per_goblins.png">
 </p>
 
+The graph above shows the distribution of the number of movies rated by each individual user. As you can see there are some outliers. 
+
 <p align="center">
 <img src="images/rat_per_movie.png">
 </p>
