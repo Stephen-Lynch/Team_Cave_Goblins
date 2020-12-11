@@ -9,6 +9,9 @@ import numpy as np
 from surprise import AlgoBase, Dataset
 from surprise.model_selection.validation import cross_validate
 
+
+
+
 class GlobalMean(AlgoBase):
     def __init__(self):
 
@@ -86,3 +89,4 @@ if __name__ == "__main__":
     print("\nMeanOfMeans...")
     algo = MeanofMeans()
     cross_validate(algo, data)
+    print(np.mean(cross_validate(algo, data)['test_rmse']))  
