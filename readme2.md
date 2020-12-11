@@ -1,26 +1,36 @@
 ![Goblin Cav](images/goblintown.jpg)
 
 # Goblin Movie Recommender
-The head of the regional board of goblins (Jeny), expressed that in a national poll of goblins 100% of goblins felt that their Goblinflix recommendations were innacurrate. Our team was contracted with improving goblin recommendations by using goblin rating data. The data comes from far far away and was recently delivered by an Ogre. For any goblins here today who need a translator know that we have none and have no intentions of getting one after the last Goblin translator ate our cat. Please do not eat any Cats during todays presentation.
+The head of the regional board of goblins (Jenny), expressed that in a national poll of goblins 100% of goblins felt that their Goblinflix recommendations were innacurrate. Our team was contracted with improving goblin recommendations by using goblin rating data. The data comes from far far away and was recently delivered by an Ogre. For any goblins here today who need a translator know that we have none and have no intentions of getting one after the last Goblin translator ate our cat. Please do not eat any Cats during todays presentation.
 
-<<<<<<< HEAD
 # EDA
-<p align="center">
-<img src="images/avg_gob_rat.png">
-</p>
 
 <p align="center">
 <img src="images/movies_per_goblins.png">
 </p>
 
+<<<<<<< HEAD
 The graph above shows the distribution of the number of movies rated by each individual user. As you can see there are some outliers. 
 
+=======
+The above graph shows us that there are inconsistencies within goblin population regarding movies rated. Some super users have rated over 2,500 movies.
+
+<br/><br/>
+>>>>>>> c30d096272c78908908cd45f0d6023ee2347d985
 <p align="center">
 <img src="images/rat_per_movie.png">
 </p>
-=======
-# Data and EDA
->>>>>>> 0662f294cc20be6b8e69f4e3e0de6a4dbcb0c47b
+
+The ratings per movie are similar to the ratings per goblin. There are a few large outliers but the majority have only a few ratings. 
+This raises it's own issues, while the outliers have a soundly averaged value in the baseline model the majority of films are working off a much smaller number of samples which can give innacurate impressions. If a certain movie is only watched by people who like it its average will be high even though it only appeals to a small number of goblins.
+
+<br/><br/>
+<p align="center">
+<img src="images/avg_gob_rat.png">
+</p>
+
+Because the average rating per user is about the same we have less to worry about with regards to the movie rating discrepancies noticed above. The original algorithm that the goblins used would apply mean ratings to movies in order to suggest a movie. This wouldn't work very well because the average is so strongly weighted to a positive range, essetially it just recommends everything. For this reason a new algorithm would need to look at things a bit differently.
+
 
 # Algorithm functionality
 
