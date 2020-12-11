@@ -4,6 +4,17 @@
 # Data Description
 
 # EDA
+<p align="center">
+<img src="images/avg_gob_rat.png">
+</p>
+
+<p align="center">
+<img src="images/movies_per_goblins.png">
+</p>
+
+<p align="center">
+<img src="images/rat_per_movie.png">
+</p>
 
 # Algorithm functionality
 We attempted several algorithms to create a new recommendation system. The first was using ALS and worked by....
