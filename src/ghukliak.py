@@ -60,6 +60,8 @@ if __name__ == "__main__":
         ax.set_xlabel(dic['xlabel'])
         ax.set_ylabel(dic['ylabel'])
         ax.set_title(dic['title'])
+        plt.ylim(top=250)
+        plt.xlim(right=100)
         ax.tick_params(axis='x', bottom=False, labelbottom=False)
         plt.show()
 
@@ -79,13 +81,13 @@ if __name__ == "__main__":
     }
 
     # snscountplot('userId', df, rat_cp_dic, 'seagreen')
-
+    print(len(df['movieId'].unique()))
     movie_hist_dic = {
-        'title': 'Ratings Per Movie Histogram',
-        'xlabel': 'Movies (1 per Bin)',
+        'title': 'Ratings Per Movie',
+        'xlabel': 'Sample of Movies (1 per Bin)',
         'ylabel': '# of Times Movie Rated'
     }
-    snscountplot('movieId', df, movie_hist_dic, 'navajowhite')
+    # snscountplot('movieId', df, movie_hist_dic, 'k')
     
 
     df['cat_length'] = 0
@@ -112,17 +114,17 @@ if __name__ == "__main__":
 
 
 
-    # avg_dic = dict()
-    # for user in df['userId'].unique():
-    #     avg_dic[user] = df['rating'][df['userId'] == user].mean()
-    # avg_dic[620]= 0
+    avg_dic = dict()
+    for user in df['userId'].unique():
+        avg_dic[user] = df['rating'][df['userId'] == user].mean()
+    avg_dic[620]= 0
     
-    # fig, ax = plt.subplots()
-    # ax.hist(avg_dic.values(), bins=10, color='seagreen')
-    # ax.set_xlabel('Avergae Rating')
-    # ax.set_ylabel('# of Goblins')
-    # ax.set_title('Average Goblin Rating Histogram')
-    # plt.show()
+    fig, ax = plt.subplots()
+    ax.hist(avg_dic.values(), bins=10, color='seagreen')
+    ax.set_xlabel('Average Rating')
+    ax.set_ylabel('# of Goblins')
+    ax.set_title('Average Goblin Rating')
+    plt.show()
 
     
 
