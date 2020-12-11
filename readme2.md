@@ -3,7 +3,6 @@
 # Goblin Movie Recommender
 The head of the regional board of goblins (Jeny), expressed that in a national poll of goblins 100% of goblins felt that their Goblinflix recommendations were innacurrate. Our team was contracted with improving goblin recommendations by using goblin rating data. The data comes from far far away and was recently delivered by an Ogre. For any goblins here today who need a translator know that we have none and have no intentions of getting one after the last Goblin translator ate our cat. Please do not eat any Cats during todays presentation.
 
-<<<<<<< HEAD
 # EDA
 
 <p align="center">
@@ -17,8 +16,8 @@ The above graph shows us that there are inconsistencies within goblin population
 <img src="images/rat_per_movie.png">
 </p>
 
-There are a lot of movie discrepancies as well. There is only a sample here because plotting 9724 movies is hard to look at. 
-
+The ratings per movie are similar to the ratings per goblin. There are a few large outliers but the majority have only a few ratings. 
+This raises it's own issues, while the outliers have a soundly averaged value in the baseline model the majority of films are working off a much smaller number of samples which can give innacurate impressions. If a certain movie is only watched by people who like it its average will be high even though it only appeals to a small number of goblins.
 
 <br/><br/>
 <p align="center">
@@ -27,9 +26,6 @@ There are a lot of movie discrepancies as well. There is only a sample here beca
 
 Because the average rating per user is about the same we have less to worry about with regards to the movie rating discrepancies noticed above. The original algorithm that the goblins used would apply mean ratings to movies in order to suggest a movie. This wouldn't work very well because the average is so strongly weighted to a positive range, essetially it just recommends everything. For this reason a new algorithm would need to look at things a bit differently.
 
-=======
-# Data and EDA
->>>>>>> 0662f294cc20be6b8e69f4e3e0de6a4dbcb0c47b
 
 # Algorithm functionality
 
