@@ -16,6 +16,9 @@ With all of this in mind, we ended up getting a RMSE value of .88
 The Second algorithm is kinda funky. Funk SVD uses a system of rounds that start off with a very poor model for predicting Goblin title ratings and then gradually improves them until it reaches peak efficiency.
 
 
+| Method | Global Mean | Mean of Means | SVD |ALS|
+|-----------------------------|-------------|---------------|------|---|
+| Avg Root Mean Squared Error | 1.13 | 1.08 | .937 | .887|
 
 # Conclusion
 The current baseline model focuses only on numbers without understanding what they actually mean. If you want to deliver personalized goblin content to your customers you need to be able to understand what each customer wants. While that would take an insane amount of work for a person, our recommender system can clearly handle it in a flash. By building upon the baseline system you're already using and adding on a model that finds the hidden topics and trends we can help you deliver the content each of your customers craves.
