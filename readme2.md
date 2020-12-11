@@ -9,7 +9,7 @@ The head of the regional board of goblins (Jenny), expressed that in a national 
 <img src="images/movies_per_goblins.png">
 </p>
 
-The graph above shows the distribution of the number of movies rated by each individual user. As you can see there are some outliers.
+The graph above shows the distribution of the number of movies rated by each individual user. As you can see there are some outliers. Some super users have rated over 2,500 movies.
 
 <br/><br/>
 <p align="center">
