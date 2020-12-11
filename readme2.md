@@ -4,33 +4,52 @@
 The head of the regional board of goblins (Jeny), expressed that in a national poll of goblins 100% of goblins felt that their Goblinflix recommendations were innacurrate. Our team was contracted with improving goblin recommendations by using goblin rating data. The data comes from far far away and was recently delivered by an Ogre. For any goblins here today who need a translator know that we have none and have no intentions of getting one after the last Goblin translator ate our cat. Please do not eat any Cats during todays presentation.
 
 # EDA
-<p align="center">
-<img src="images/avg_gob_rat.png">
-</p>
 
 <p align="center">
 <img src="images/movies_per_goblins.png">
 </p>
 
+The above graph shows us that there are inconsistencies within goblin population regarding movies rated. Some super users have rated over 2,500 movies.
+
+<br/><br/>
 <p align="center">
 <img src="images/rat_per_movie.png">
 </p>
+
+There are a lot of movie discrepancies as well. There is only a sample here because plotting 9724 movies is hard to look at. 
+
+
+<br/><br/>
+<p align="center">
+<img src="images/avg_gob_rat.png">
+</p>
+
+Because the average rating per user is about the same we have less to worry about with regards to the movie rating discrepancies noticed above.
+
+=======
 # Data and EDA
 
 # Algorithm functionality
-We attempted several algorithms to create a new recommendation system. The first was using ALS and worked by....
+
+| Method | Global Mean | Mean of Means | SVD |ALS|
+|-----------------------------|-------------|---------------|------|---|
+| Avg Root Mean Squared Error | 1.13 | 1.08 | .937 | .887|
+
+The goal was to be accurate to our assumptions on user preference based on explicit choice.
+Therefore achieving a low RMSE indicates success.
+We started off with looking at an ALS alogrithm through spark modules to see if we could get a lower RMSE value than the baseline global mean and mean of means RMSE.
+
+ALS splits the test matrix into a user & item matrix giving us two n,m matrixes.
+Setting matrix 1 to a fixed point(constant) and optimizing matrix 2. And multiplying them giving 
+the prediction matrix, compare it to the original. And detrmine how far off the newly transformed matrix
+is to our original matrix.
+
 
 We looked through the genre tags that were within the tags.csv file and noticed around 10 were showing up consistently, so for our latent factors for our ALS model, we chose 10.
 
 We also ended up using a regularization parameter of .1 to make sure no latent topics would be over valued in our model.
 With all of this in mind, we ended up getting a RMSE value of .88
 
-The Second algorithm is kinda funky. Funk SVD uses a system of rounds that start off with a very poor model for predicting Goblin title ratings and then gradually improves them until it reaches peak efficiency.
-
-
-| Method | Global Mean | Mean of Means | SVD |ALS|
-|-----------------------------|-------------|---------------|------|---|
-| Avg Root Mean Squared Error | 1.13 | 1.08 | .937 | .887|
 
 
 
