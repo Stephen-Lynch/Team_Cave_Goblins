@@ -6,8 +6,9 @@
 # EDA
 
 # Algorithm functionality
-We attempted several algorithms to create a knew recommendation system. The first was using ALS and worked by....
+We attempted several algorithms to create a new recommendation system. The first was using ALS and worked by....
 
 The Second algorithm is kinda funky. Funk SVD uses a system of rounds that start off with a very poor model for predicting Goblin title ratings and then gradually improves them until it reaches peak efficiency.
 
 # Conclusion
+Goblin movie choices have always been unique an dthat is something th
