@@ -1,7 +1,7 @@
 ![Goblin Cav](images/goblintown.jpg)
 
 # Goblin Movie Recommender
-The head of the regional board of goblins (Jenny), expressed that in a national poll of goblins 100% of goblins felt that their Goblinflix recommendations were innacurrate. Our team was contracted with improving goblin recommendations by using goblin rating data. The data comes from far far away and was recently delivered by an Ogre. For any goblins here today who need a translator know that we have none and have no intentions of getting one after the last Goblin translator ate our cat. Please do not eat any Cats during todays presentation.
+The head of the regional board of goblins (Jenny), expressed that in a national poll of goblins 100% of goblins felt that their Goblinflix recommendations were innacurrate. Our team was contracted with improving goblin recommendations by using goblin rating data. The data comes from far far away and was recently delivered by an Ogre. For any goblins here today who need a translator know that we have none and have no intentions of getting one after the last Goblin translator ate our cat. Please do not eat any cats during todays presentation.
 
 # EDA
 
@@ -9,10 +9,6 @@ The head of the regional board of goblins (Jenny), expressed that in a national 
 <img src="images/movies_per_goblins.png">
 </p>
 
-<<<<<<< HEAD
-The graph above shows the distribution of the number of movies rated by each individual user. As you can see there are some outliers. 
-
-=======
 The above graph shows us that there are inconsistencies within goblin population regarding movies rated. Some super users have rated over 2,500 movies.
 
 <br/><br/>
