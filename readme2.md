@@ -25,7 +25,7 @@ There are a lot of movie discrepancies as well. There is only a sample here beca
 <img src="images/avg_gob_rat.png">
 </p>
 
-Because the average rating per user is about the same we have less to worry about with regards to the movie rating discrepancies noticed above.
+Because the average rating per user is about the same we have less to worry about with regards to the movie rating discrepancies noticed above. The original algorithm that the goblins used would apply mean ratings to movies in order to suggest a movie. This wouldn't work very well because the average is so strongly weighted to a positive range, essetially it just recommends everything. For this reason a new algorithm would need to look at things a bit differently.
 
 =======
 # Data and EDA
