@@ -16,8 +16,8 @@ The above graph shows us that there are inconsistencies within goblin population
 <img src="images/rat_per_movie.png">
 </p>
 
-There are a lot of movie discrepancies as well. There is only a sample here because plotting 9724 movies is hard to look at. 
-
+The ratings per movie are similar to the ratings per goblin. There are a few large outliers but the majority have only a few ratings. 
+This raises it's own issues, while the outliers have a soundly averaged value in the baseline model the majority of films are working off a much smaller number of samples which can give innacurate impressions. If a certain movie is only watched by people who like it its average will be high even though it only appeals to a small number of goblins.
 
 <br/><br/>
 <p align="center">
@@ -26,8 +26,6 @@ There are a lot of movie discrepancies as well. There is only a sample here beca
 
 Because the average rating per user is about the same we have less to worry about with regards to the movie rating discrepancies noticed above.
 
-=======
-# Data and EDA
 
 # Algorithm functionality
 
