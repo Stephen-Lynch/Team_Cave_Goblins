@@ -8,6 +8,18 @@ import sys
 import numpy as np
 from surprise import AlgoBase, Dataset
 from surprise.model_selection.validation import cross_validate
+import pandas as pd
+
+from scipy.sparse import csr_matrix
+
+import warnings
+warnings.filterwarnings('ignore')
+
+
+df = pd.read_csv('data/ml-latest-small/ratings.csv')
+class_as_mat = csr_matrix((df.rating, ((df.userId), (df.movieId))))
+
+
 
 class GlobalMean(AlgoBase):
     def __init__(self):
@@ -79,6 +91,7 @@ class MeanofMeans(AlgoBase):
 if __name__ == "__main__":
 
     data = Dataset.load_builtin('ml-100k')
+<<<<<<< HEAD:src/baselines.py
     print(data)
     print("\nGlobal Mean...")
     algo = GlobalMean()
@@ -87,3 +100,15 @@ if __name__ == "__main__":
     print("\nMeanOfMeans...")
     algo = MeanofMeans()
     print(np.mean(cross_validate(algo, data)['test_rmse']))
+=======
+    # print("\nGlobal Mean...")
+    # algo = GlobalMean()
+    # print('RMSE',  {np.mean(cross_validate(algo, data)['test_rmse'])})
+
+    # print("\nMeanOfMeans...")
+    # algo = MeanofMeans()
+    # print('RMSE'.format(), {np.mean(cross_validate(algo, data)['test_rmse'])})
+
+    
+    print(df.head())
+>>>>>>> stephen:src/baselines50.py
