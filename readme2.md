@@ -5,17 +5,28 @@ The head of the regional board of goblins (Jeny), expressed that in a national p
 
 <<<<<<< HEAD
 # EDA
-<p align="center">
-<img src="images/avg_gob_rat.png">
-</p>
 
 <p align="center">
 <img src="images/movies_per_goblins.png">
 </p>
 
+The above graph shows us that there are inconsistencies within goblin population regarding movies rated. Some super users have rated over 2,500 movies.
+
+<br/><br/>
 <p align="center">
 <img src="images/rat_per_movie.png">
 </p>
+
+There are a lot of movie discrepancies as well. There is only a sample here because plotting 9724 movies is hard to look at. 
+
+
+<br/><br/>
+<p align="center">
+<img src="images/avg_gob_rat.png">
+</p>
+
+Because the average rating per user is about the same we have less to worry about with regards to the movie rating discrepancies noticed above.
+
 =======
 # Data and EDA
 >>>>>>> 0662f294cc20be6b8e69f4e3e0de6a4dbcb0c47b
