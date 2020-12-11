@@ -9,7 +9,7 @@ The head of the regional board of goblins (Jenny), expressed that in a national 
 <img src="images/movies_per_goblins.png">
 </p>
 
-The above graph shows us that there are inconsistencies within goblin population regarding movies rated. Some super users have rated over 2,500 movies.
+The graph above shows the distribution of the number of movies rated by each individual user. As you can see there are some outliers.
 
 <br/><br/>
 <p align="center">
