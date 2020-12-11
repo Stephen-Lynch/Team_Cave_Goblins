@@ -117,7 +117,7 @@ if __name__ == "__main__":
 
     algo = MeanofMeans()
     algo.fit(train)
-    recs = algo.estimate(56, 5)
+    recs = algo.estimate(472, 5)
     
     names = pd.read_csv('data/ml-latest-small/movies.csv').set_index('movieId')
     
