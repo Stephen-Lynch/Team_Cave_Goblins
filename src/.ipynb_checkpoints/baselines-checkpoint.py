@@ -19,8 +19,6 @@ warnings.filterwarnings('ignore')
 df = pd.read_csv('data/ml-latest-small/ratings.csv')
 class_as_mat = csr_matrix((df.rating, ((df.userId), (df.movieId))))
 
-
-
 class GlobalMean(AlgoBase):
     def __init__(self):
 
@@ -100,4 +98,4 @@ if __name__ == "__main__":
     # print('RMSE'.format(), {np.mean(cross_validate(algo, data)['test_rmse'])})
 
     
-    print(df.head())
+    print(class_as_mat.T)
