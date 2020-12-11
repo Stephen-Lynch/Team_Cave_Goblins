@@ -79,6 +79,7 @@ class MeanofMeans(AlgoBase):
 if __name__ == "__main__":
 
     data = Dataset.load_builtin('ml-100k')
+
     print(data)
     print("\nGlobal Mean...")
     algo = GlobalMean()
@@ -87,3 +88,13 @@ if __name__ == "__main__":
     print("\nMeanOfMeans...")
     algo = MeanofMeans()
     print(np.mean(cross_validate(algo, data)['test_rmse']))
+    # print("\nGlobal Mean...")
+    # algo = GlobalMean()
+    # print('RMSE',  {np.mean(cross_validate(algo, data)['test_rmse'])})
+
+    # print("\nMeanOfMeans...")
+    # algo = MeanofMeans()
+    # print('RMSE'.format(), {np.mean(cross_validate(algo, data)['test_rmse'])})
+
+    
+    print(df.head())
